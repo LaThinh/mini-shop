@@ -23,7 +23,7 @@ function Search() {
 					{pSearch && pSearch.length > 0 ? <ProductGrid products={pSearch} /> : <p>Not found</p>}
 				</div>
 			) : (
-				<p>Please Enter keyword to search</p>
+				<p className="text-center">Please Enter keyword to search</p>
 			)}
 		</div>
 	);

@@ -2,6 +2,7 @@ import Link from "next/link";
 import data from "@/app/data/product.json";
 import { IProduct } from "@/app/lib/interface";
 import ProductGrid from "./components/ProductGrid";
+import CartBar from "./components/CartBar";
 
 export default function Home() {
 	const products: IProduct[] = data;
@@ -13,6 +14,7 @@ export default function Home() {
 				<h3 className="font-bold">Go to Product Category</h3>
 			</Link>
 			<ProductGrid products={products} />
+			<CartBar />
 		</main>
 	);
 }
