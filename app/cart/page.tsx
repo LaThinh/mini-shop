@@ -4,6 +4,7 @@ import { useCartContext } from "@/app/CartContext";
 import { ICartItem, IProduct } from "../lib/interface";
 import data from "@/app/data/product.json";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function CartPage() {
 	const { cart, dispatch } = useCartContext();
@@ -61,18 +62,25 @@ export default function CartPage() {
 										</td>
 										<td className="product-name  ">
 											<div className="product-id w-full text-sm text-gray-500">Id: {product.id}</div>
-											<h3>{product.title}</h3>
+											<Link href={`/product/${product.id}`}>
+												<h3>{product.title}</h3>
+											</Link>
 										</td>
 										<td className="product-price text-right">{product.price}</td>
 										<td className="product-qty text-center">{cartItem[0].qty}</td>
-										<td className="product-total text-right">{cartItem[0].qty * product.price}</td>
+										<td className="product-total text-right">{(cartItem[0].qty * product.price).toFixed(2)}</td>
 										<td>
 											<a
 												className="remove-item cursor-pointer text-xl hover:text-red-500"
 												title="Remove this item"
 												onClick={() => handleRemoveFromCart(cartItem[0].productId)}
 											>
-												x
+												<svg width="12" height="12" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M1.38461 18L0 16.6154L7.61538 9L0 1.38461L1.38461 0L9 7.61538L16.6154 0L18 1.38461L10.3846 9L18 16.6154L16.6154 18L9 10.3846L1.38461 18Z"
+														fill="#666666"
+													/>
+												</svg>
 											</a>
 										</td>
 									</tr>

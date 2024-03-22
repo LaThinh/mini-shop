@@ -42,7 +42,7 @@
 	{
 		"id": "prod_001",
 		"title": "Wireless Headphones",
-		"image": "https://picsum.photos/300?image=1",
+		"image": "https://picsum.photos/500?image=1",
 		"price": 79.99,
 		"categories": ["Electronics", "Audio"],
 		"SKU": "WH-1234",
@@ -52,7 +52,7 @@
 	{
 		"id": "prod_002",
 		"title": "Smartwatch",
-		"image": "https://picsum.photos/300?image=2",
+		"image": "https://picsum.photos/500?image=2",
 		"price": 199.99,
 		"categories": ["Electronics", "Wearables"],
 		"SKU": "SW-5678",
@@ -62,7 +62,7 @@
 	{
 		"id": "prod_003",
 		"title": "Laptop Backpack",
-		"image": "https://picsum.photos/300?image=8",
+		"image": "https://picsum.photos/500?image=8",
 		"price": 39.99,
 		"categories": ["Bags", "Laptops"],
 		"SKU": "BP-9012",
@@ -72,7 +72,7 @@
 	{
 		"id": "prod_004",
 		"title": "Gaming Mouse",
-		"image": "https://picsum.photos/300?image=13",
+		"image": "https://picsum.photos/500?image=13",
 		"price": 24.99,
 		"categories": ["Electronics", "Gaming"],
 		"SKU": "GM-3456",
@@ -82,7 +82,7 @@
 	{
 		"id": "prod_005",
 		"title": "Wireless Keyboard",
-		"image": "https://picsum.photos/300?image=23",
+		"image": "https://picsum.photos/500?image=36",
 		"price": 49.99,
 		"categories": ["Electronics", "Computers"],
 		"SKU": "WK-7890",
@@ -92,7 +92,7 @@
 	{
 		"id": "prod_006",
 		"title": "Noise-Cancelling Headphones",
-		"image": "https://picsum.photos/300?image=32",
+		"image": "https://picsum.photos/500?image=32",
 		"price": 149.99,
 		"categories": ["Electronics", "Audio"],
 		"SKU": "NC-1213",
@@ -102,7 +102,7 @@
 	{
 		"id": "prod_007",
 		"title": "Fitness Tracker",
-		"image": "https://picsum.photos/300?image=123",
+		"image": "https://picsum.photos/500?image=220",
 		"price": 59.99,
 		"categories": ["Electronics", "Sports"],
 		"SKU": "FT-4567",
@@ -112,7 +112,7 @@
 	{
 		"id": "prod_008",
 		"title": "Coffee Maker",
-		"image": "https://picsum.photos/300?image=98",
+		"image": "https://picsum.photos/500?image=98",
 		"price": 74.99,
 		"categories": ["Appliances", "Kitchen"],
 		"SKU": "CM-8901",
@@ -122,7 +122,7 @@
 	{
 		"id": "prod_009",
 		"title": "Air Purifier",
-		"image": "https://picsum.photos/300?image=11",
+		"image": "https://picsum.photos/500?image=11",
 		"price": 99.99,
 		"categories": ["Appliances", "Home"],
 		"SKU": "AP-2345",
@@ -132,7 +132,7 @@
 	{
 		"id": "prod_010",
 		"title": "Smart Speaker",
-		"image": "https://picsum.photos/300?image=35",
+		"image": "https://picsum.photos/500?image=35",
 		"price": 44.99,
 		"categories": ["Electronics", "Smart Home"],
 		"SKU": "SS-6789",
@@ -142,7 +142,7 @@
 	{
 		"id": "prod_011",
 		"title": "Hair Dryer",
-		"image": "https://picsum.photos/300?image=3",
+		"image": "https://picsum.photos/500?image=3",
 		"price": 34.99,
 		"categories": ["Appliances", "Personal Care"],
 		"SKU": "HD-5678",

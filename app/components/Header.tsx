@@ -8,15 +8,21 @@ export default function Header() {
 
 	const pathname = usePathname();
 	const isSearchPage = pathname.indexOf("search") >= 0;
-
 	const [showSearch, setShowSearch] = useState(false);
 	const [query, setQuery] = useState("");
 
+	let pageTitle = "Homepage";
+	if (pathname.indexOf("category") >= 0) {
+		pageTitle = "Real Food Store";
+	} else if (pathname.indexOf("product") >= 0) {
+		pageTitle = "Product Detail Page";
+	} else if (pathname.indexOf("cart") >= 0) {
+		pageTitle = "Cart page";
+	}
+
 	const handleBack = () => {
-		router.back();
 		setShowSearch(false);
-		if (!isSearchPage) {
-		}
+		router.back();
 	};
 
 	const handleShowSearch = () => {
@@ -48,7 +54,7 @@ export default function Header() {
 					}`}
 				>
 					{!showSearch && (
-						<a href="/category/2" className="btn-back" onClick={handleBack}>
+						<div className="btn-back cursor-pointer" onClick={handleBack}>
 							{query && query.length > 0 ? (
 								<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path
@@ -64,9 +70,9 @@ export default function Header() {
 									/>
 								</svg>
 							)}
-						</a>
+						</div>
 					)}
-					{!isSearchPage && <h2 className="title text-lg font-medium">Real Food Store</h2>}
+					{!isSearchPage && <h2 className="title text-lg font-medium text-nowrap">{pageTitle}</h2>}
 				</div>
 
 				<div className="right w-full flex gap-3 items-center">

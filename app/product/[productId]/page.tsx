@@ -15,7 +15,7 @@ export default function ProductDetailPage({ params }: { params: { productId: str
 	return (
 		<div className="product-detail container m-auto max-w-5xl p-3 flex flex-col items-center md:flex-row md:items-start gap-5">
 			<div className="product-image text-center">
-				<Image src={product.image.replace("300", "540")} width={500} height={500} alt={product.title} />
+				<Image src={product.image} width={500} height={500} alt={product.title} />
 			</div>
 			<div className="product-info flex flex-col gap-6">
 				<h1 className="product-title page-title">{product.title}</h1>
