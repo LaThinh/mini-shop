@@ -4,6 +4,7 @@ const nextConfig = {
         domains: ["picsum.photos"],
         // unoptimized: true
     },
+
 };
 
 export default nextConfig;

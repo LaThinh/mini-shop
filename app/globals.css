@@ -56,7 +56,7 @@ a:hover svg path {
 }
 
 .page-title {
-	@apply my-6 text-xl font-bold;
+	@apply my-6 text-xl font-bold text-center;
 }
 
 .cart-products {
