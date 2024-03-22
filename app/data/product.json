@@ -1,5 +1,45 @@
 [
 	{
+		"id": "001",
+		"title": "Water, 500 ml",
+		"image": "/images/product-image-01.png",
+		"price": 300,
+		"categories": ["Food", "Audio"],
+		"SKU": "Water001",
+		"unit": "500ml",
+		"inventory": 12
+	},
+	{
+		"id": "002",
+		"title": "Rice, 1000 g",
+		"image": "/images/product-image-02.png",
+		"price": 1000,
+		"categories": ["Food", "Audio"],
+		"SKU": "Water001",
+		"unit": "1000g",
+		"inventory": 12
+	},
+	{
+		"id": "003",
+		"title": "Milk, 1000 ml",
+		"image": "/images/product-image-03.png",
+		"price": 250,
+		"categories": ["Food", "Milk"],
+		"SKU": "Water001",
+		"unit": "500ml",
+		"inventory": 12
+	},
+	{
+		"id": "004",
+		"title": "Croissant, 450 g",
+		"image": "/images/product-image-04.png",
+		"price": 150,
+		"categories": ["Food", "Audio"],
+		"SKU": "Water001",
+		"unit": "500ml",
+		"inventory": 12
+	},
+	{
 		"id": "prod_001",
 		"title": "Wireless Headphones",
 		"image": "https://picsum.photos/300?image=1",

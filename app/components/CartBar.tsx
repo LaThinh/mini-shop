@@ -24,7 +24,7 @@ export default function CartBar() {
 					<span>In your cart</span>
 				</div>
 				<div className="cart-price ">
-					<Link href="/cart" title="Go to Cart Page" className="flex gap-3 items-center">
+					<Link href="/cart" title="Go to Cart Page" className="flex gap-3 !text-white items-center">
 						<div className="total-price font-bold">₹ {totalPrice.toFixed(2)}</div>
 						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M5.90845 13L5 12.1079L9.1831 8L5 3.89212L5.90845 3L11 8L5.90845 13Z" fill="white" />

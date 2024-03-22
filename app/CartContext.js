@@ -24,7 +24,8 @@ const cartReducer = (state, action) => {
             } else {
                 return [...state, action.payload];
             }
-
+        case 'REMOVE_ITEM':
+            return state.filter(item => item.productId !== action.payload.productId);
         case 'INITIALIZE_CART':
             console.log("Init cart");
             //console.log(state);

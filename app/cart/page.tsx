@@ -6,7 +6,7 @@ import data from "@/app/data/product.json";
 import Image from "next/image";
 
 export default function CartPage() {
-	const { cart } = useCartContext();
+	const { cart, dispatch } = useCartContext();
 	const products: IProduct[] = data;
 
 	//const productCart = products.filter(product => product.id)
@@ -24,6 +24,10 @@ export default function CartPage() {
 			cartProducts.push(product[0]);
 		}
 	});
+
+	const handleRemoveFromCart = (productId: string) => {
+		dispatch({ type: "REMOVE_ITEM", payload: { productId } });
+	};
 
 	console.log(cartProducts);
 	console.log(cart);
@@ -44,6 +48,7 @@ export default function CartPage() {
 								<td>Price</td>
 								<td>Quantity</td>
 								<td>Total</td>
+								<td></td>
 							</tr>
 						</thead>
 						<tbody>
@@ -58,9 +63,18 @@ export default function CartPage() {
 											<div className="product-id w-full text-sm text-gray-500">Id: {product.id}</div>
 											<h3>{product.title}</h3>
 										</td>
-										<td className="product-price">{product.price}</td>
-										<td className="product-qty">{cartItem[0].qty}</td>
+										<td className="product-price text-right">{product.price}</td>
+										<td className="product-qty text-center">{cartItem[0].qty}</td>
 										<td className="product-total text-right">{cartItem[0].qty * product.price}</td>
+										<td>
+											<a
+												className="remove-item cursor-pointer text-xl hover:text-red-500"
+												title="Remove this item"
+												onClick={() => handleRemoveFromCart(cartItem[0].productId)}
+											>
+												x
+											</a>
+										</td>
 									</tr>
 								);
 							})}
@@ -80,7 +94,7 @@ export default function CartPage() {
 						<span></span>
 						<a
 							href=""
-							className="btn-checkout mt-10 bg-primary hover:opacity-90 text-white text-2xl px-10 py-2 rounded-full"
+							className="btn-checkout mt-10 bg-primary hover:opacity-90 !text-white text-2xl px-10 py-2 rounded-full"
 						>
 							Checkout
 						</a>
