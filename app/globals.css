@@ -3,31 +3,52 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+	--foreground-rgb: 0, 0, 0;
+	--background-start-rgb: 234, 239, 240;
+	--background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+	:root {
+		--foreground-rgb: 255, 255, 255;
+		--background-start-rgb: 0, 0, 0;
+		--background-end-rgb: 0, 0, 0;
+	}
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+	color: rgb(var(--foreground-rgb));
+	background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+	.text-balance {
+		text-wrap: balance;
+	}
+}
+
+.qty-change {
+	width: 22px;
+	height: 22px;
+	font-size: 0;
+	@apply cursor-pointer hover:opacity-80;
+}
+
+.qty-change.decrease {
+	background: url(/icons/icon_less.svg) no-repeat;
+}
+.qty-change.increase {
+	background: url(/icons/icon_more.svg) no-repeat;
+}
+
+.page-title {
+	@apply my-6 text-xl font-bold;
+}
+
+.cart-products {
+	border-spacing: theme("spacing.3");
+}
+
+.cart-products td {
+	padding: 4px 10px;
 }

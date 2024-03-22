@@ -1,0 +1,162 @@
+[
+	{
+		"id": "prod_001",
+		"title": "Wireless Headphones",
+		"image": "https://picsum.photos/300?image=1",
+		"price": 79.99,
+		"categories": ["Electronics", "Audio"],
+		"SKU": "WH-1234",
+		"unit": "each",
+		"inventory": 12
+	},
+	{
+		"id": "prod_002",
+		"title": "Smartwatch",
+		"image": "https://picsum.photos/300?image=2",
+		"price": 199.99,
+		"categories": ["Electronics", "Wearables"],
+		"SKU": "SW-5678",
+		"unit": "each",
+		"inventory": 5
+	},
+	{
+		"id": "prod_003",
+		"title": "Laptop Backpack",
+		"image": "https://picsum.photos/300?image=8",
+		"price": 39.99,
+		"categories": ["Bags", "Laptops"],
+		"SKU": "BP-9012",
+		"unit": "each",
+		"inventory": 16
+	},
+	{
+		"id": "prod_004",
+		"title": "Gaming Mouse",
+		"image": "https://picsum.photos/300?image=13",
+		"price": 24.99,
+		"categories": ["Electronics", "Gaming"],
+		"SKU": "GM-3456",
+		"unit": "each",
+		"inventory": 55
+	},
+	{
+		"id": "prod_005",
+		"title": "Wireless Keyboard",
+		"image": "https://picsum.photos/300?image=23",
+		"price": 49.99,
+		"categories": ["Electronics", "Computers"],
+		"SKU": "WK-7890",
+		"unit": "each",
+		"inventory": 80
+	},
+	{
+		"id": "prod_006",
+		"title": "Noise-Cancelling Headphones",
+		"image": "https://picsum.photos/300?image=32",
+		"price": 149.99,
+		"categories": ["Electronics", "Audio"],
+		"SKU": "NC-1213",
+		"unit": "each",
+		"inventory": 24
+	},
+	{
+		"id": "prod_007",
+		"title": "Fitness Tracker",
+		"image": "https://picsum.photos/300?image=123",
+		"price": 59.99,
+		"categories": ["Electronics", "Sports"],
+		"SKU": "FT-4567",
+		"unit": "each",
+		"inventory": 36
+	},
+	{
+		"id": "prod_008",
+		"title": "Coffee Maker",
+		"image": "https://picsum.photos/300?image=98",
+		"price": 74.99,
+		"categories": ["Appliances", "Kitchen"],
+		"SKU": "CM-8901",
+		"unit": "each",
+		"inventory": 2
+	},
+	{
+		"id": "prod_009",
+		"title": "Air Purifier",
+		"image": "https://picsum.photos/300?image=11",
+		"price": 99.99,
+		"categories": ["Appliances", "Home"],
+		"SKU": "AP-2345",
+		"unit": "each",
+		"inventory": 9
+	},
+	{
+		"id": "prod_010",
+		"title": "Smart Speaker",
+		"image": "https://picsum.photos/300?image=35",
+		"price": 44.99,
+		"categories": ["Electronics", "Smart Home"],
+		"SKU": "SS-6789",
+		"unit": "each",
+		"inventory": 29
+	},
+	{
+		"id": "prod_011",
+		"title": "Hair Dryer",
+		"image": "https://picsum.photos/300?image=3",
+		"price": 34.99,
+		"categories": ["Appliances", "Personal Care"],
+		"SKU": "HD-5678",
+		"unit": "each",
+		"inventory": 32
+	},
+	{
+		"id": "prod_012",
+		"title": "Travel Water Bottle",
+		"image": "https://picsum.photos/240/240?image=345",
+		"price": 29.99,
+		"categories": ["Appliances", "Kitchen"],
+		"SKU": "WB-9012",
+		"unit": "each",
+		"inventory": 1
+	},
+	{
+		"id": "prod_013",
+		"title": "Travel Backpack",
+		"image": "https://picsum.photos/240/240?image=24",
+		"price": 69.99,
+		"categories": ["Luggage", "Travel"],
+		"SKU": "BP-3456",
+		"unit": "each",
+		"inventory": 0
+	},
+
+	{
+		"id": "prod_014",
+		"title": "Smart Plug",
+		"image": "https://picsum.photos/240/240?image=233",
+		"price": 39.99,
+		"categories": ["Electronics", "Smart Home"],
+		"SKU": "SP-7890",
+		"unit": "each"
+	},
+	{
+		"id": "prod_015",
+		"title": "Robotic Vacuum Cleaner",
+		"image": "https://picsum.photos/240/240?image=244",
+		"price": 299.99,
+		"categories": ["Appliances", "Home Cleaning"],
+		"SKU": "RB-1213",
+		"unit": "each",
+		"inventory": 80
+	},
+	{
+		"id": "prod_016",
+		"title": "Wireless Headphones Demo",
+		"image": "https://picsum.photos/240/240?image=45",
+		"price": 299.99,
+		"categories": ["Appliances", "Home Cleaning"],
+		"SKU": "RB-1213",
+		"unit": "each",
+		"inventory": 80
+	}
+]
