@@ -34,6 +34,7 @@ export default function Header() {
 		setShowSearch(false);
 		setQuery("");
 		router.back();
+		if (pageRouter === "Search") router.back();
 	};
 
 	const handleShowSearch = () => {

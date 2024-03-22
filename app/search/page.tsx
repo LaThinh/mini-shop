@@ -17,7 +17,7 @@ function Search() {
 	}
 
 	return (
-		<div className="container px-3">
+		<div className="">
 			{query && query.length > 0 ? (
 				<div className="result">
 					{pSearch && pSearch.length > 0 ? <ProductGrid products={pSearch} /> : <p>Not found</p>}
@@ -31,7 +31,7 @@ function Search() {
 
 export default function SearchPage() {
 	return (
-		<div className="container px-3">
+		<div className="container m-auto w-full max-w-5xl px-3">
 			<h1 className="page-title">Search</h1>
 			<Suspense>
 				<Search />
