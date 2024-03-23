@@ -12,8 +12,8 @@ import AddToCart from "./AddToCart";
 
 export default function ProductCard({ product }: { product: IProduct }) {
 	return (
-		<div className="product-card bg-white rounded-lg shadow-md overflow-hidden">
-			<div className="flex flex-col">
+		<div className="product-card ">
+			<div className="flex flex-col bg-white rounded-lg shadow-md overflow-hidden">
 				<div className="product-image aspect-square overflow-hidden">
 					<Link href={`/product/${product.id}`}>
 						<Image

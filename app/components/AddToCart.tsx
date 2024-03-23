@@ -89,14 +89,16 @@ export default function AddToCart({ product }: { product: IProduct }) {
 						</a>
 					</div>
 				) : (
-					<div className="hover:opacity-90">
+					<>
 						<button
-							className="btn add-to-cart cursor-pointer"
+							aria-label={`Add Cart Product ${product.title}`}
+							title="Add to Cart"
+							className="btn add-to-cart cursor-pointer hover:opacity-90"
 							onClick={() => handleAddToCart(productId, 1)}
 						>
 							<IconCart size={20} />
 						</button>
-					</div>
+					</>
 				)}
 			</Suspense>
 		</div>

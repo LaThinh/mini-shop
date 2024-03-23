@@ -15,7 +15,7 @@ export default function CartBar() {
 		totalPrice += item.qty * item.price;
 	});
 	return (
-		<div className="cart-bar container m-auto w-[calc(100%-16px)] max-w-4xl fixed left-1/2 translate-x-[-50%] bottom-3 bg-primary text-white p-3 rounded-lg">
+		<div className="cart-bar container m-auto w-[calc(100%-16px)] max-w-5xl fixed left-1/2 translate-x-[-50%] bottom-3 bg-primary text-white p-3 rounded-lg">
 			<div className="container flex justify-between items-center min-h-9">
 				<div className="cart-qty flex items-center gap-3">
 					<div className="total-qty bg-[#00E5C9] w-8 h-8 flex items-center justify-center text-white rounded-full text-center">
