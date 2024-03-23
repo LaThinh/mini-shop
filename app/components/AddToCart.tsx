@@ -90,12 +90,12 @@ export default function AddToCart({ product }: { product: IProduct }) {
 					</div>
 				) : (
 					<div className="hover:opacity-90">
-						<a
+						<button
 							className="btn add-to-cart cursor-pointer"
 							onClick={() => handleAddToCart(productId, 1)}
 						>
 							<IconCart size={20} />
-						</a>
+						</button>
 					</div>
 				)}
 			</Suspense>

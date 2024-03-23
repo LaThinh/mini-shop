@@ -11,7 +11,7 @@ export default function Home() {
 		<main className="w-full m-auto flex min-h-screen flex-col gap-5 items-center justify-between">
 			<h1 className="page-title">Welcome to Homepage</h1>
 			<Link href="/category/2" title="Category" className="text-primary text-xl">
-				<h3 className="font-bold">Go to Product Category</h3>
+				<h2 className="font-bold">Go to Product Category</h2>
 			</Link>
 			<ProductGrid products={products} />
 			<CartBar />

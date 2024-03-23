@@ -89,7 +89,7 @@ export default function Header() {
 					{showSearch && (
 						<div className="search-bar flex gap-2 items-center w-full">
 							<div className="close-search" onClick={() => setShowSearch(false)}>
-								<IconClose />
+								<IconClose size={18} />
 							</div>
 							<input
 								id="search"
