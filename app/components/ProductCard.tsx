@@ -1,13 +1,14 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { IProduct } from "@/app/lib/interface";
 import Image from "next/image";
 import Link from "next/link";
-//import AddToCart from "./AddToCart";
+import AddToCart from "./AddToCart";
 
-import dynamic from "next/dynamic";
-const AddToCart = dynamic(() => import("@/app/components/AddToCart"), {
-	ssr: false,
-});
+// import dynamic from "next/dynamic";
+// import Loading from "./Loading";
+// const AddToCart = dynamic(() => import("@/app/components/AddToCart"), {
+// 	ssr: false,
+// });
 
 export default function ProductCard({ product }: { product: IProduct }) {
 	return (
@@ -29,6 +30,8 @@ export default function ProductCard({ product }: { product: IProduct }) {
 						<h3 className="product-title font-medium text-sm">{product.title}</h3>
 					</Link>
 					<div className="price text-xs">₹ {product.price}</div>
+					{/* <Suspense fallback={<Loading />}>
+					</Suspense> */}
 					<AddToCart product={product} />
 				</div>
 			</div>

@@ -22,7 +22,9 @@ export default function RootLayout({
 			<body className={roboto.className}>
 				<CartProvider>
 					<Header />
-					<main className="main-content m-auto pt-3 pb-20 min-h-[calc(100vh-80px)]">{children}</main>
+					<main className="main-content m-auto p-3 pb-24 min-h-[calc(100vh-80px)]">
+						{children}
+					</main>
 				</CartProvider>
 			</body>
 		</html>

@@ -6,22 +6,33 @@ const CartContext = createContext();
 const cartReducer = (state, action) => {
     switch (action.type) {
         case 'ADD_TO_CART':
-            console.log("Add Cart");
-            console.log(action.payload);
-
             const existingItemIndex = state.findIndex(item => item.productId === action.payload.productId);
             if (existingItemIndex !== -1) {
-
+                //Update                
                 const updatedCart = [...state];
                 updatedCart[existingItemIndex].qty = action.payload.qty;
                 return updatedCart;
             } else {
+                //Add new
+                console.log("Add Cart");
+                console.log(action.payload);
                 return [...state, action.payload];
             }
+
+        case 'UPDATE_QUANTITY':
+            const index = state.findIndex(item => item.productId === action.payload.productId);
+            if (index !== -1) {
+                // console.log("Update Cart ProductId=" + action.payload.productId + " qty " + action.payload.qty);
+                const updatedCart = [...state];
+                updatedCart[index].qty = action.payload.qty;
+                return updatedCart;
+            }
+            break;
+
         case 'REMOVE_ITEM':
             return state.filter(item => item.productId !== action.payload.productId);
+
         case 'INITIALIZE_CART':
-            console.log("Init cart");
             state = action.payload;
             return state;
         default:

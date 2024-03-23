@@ -7,7 +7,7 @@ import { IProduct } from "@/app/lib/interface";
 export default function ProductCategory() {
 	const products: IProduct[] = data;
 	return (
-		<div className="m-auto p-3 product-category container">
+		<div className="m-auto product-category container">
 			<h1 className="page-title text-center">Product Category</h1>
 			<ProductGrid products={products} />
 			<CartBar />
